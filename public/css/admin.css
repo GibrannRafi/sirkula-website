@@ -1,0 +1,40 @@
+.container {
+    margin-top: 8rem;
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.container a {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.text{
+    display: inline;
+}
+
+.button-geys{
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+}
+
+h5{
+    margin: 0;
+}
+
+a:hover
+{
+    width: 160px;
+    height: 90px;
+    transition: all 0.5s;
+}

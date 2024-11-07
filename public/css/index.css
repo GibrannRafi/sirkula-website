@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F2E8C6;
+    overflow-x: hidden;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding-top: 70px;
+
+}
+
+.hero h1 {
+    color: #800000;
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.slightest-help {
+    margin-bottom: 5%;
+    font-size: large;
+}
+
+.mean-a-lot {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #2c2c2c;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    margin-top : 10px;
+}
+
+.complete-info {
+    margin-bottom: 0;
+    padding-top:25px;
+}
+
+.various-hospitals {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.get-started-btn {
+    background-color: #7a0000;
+    margin-top: 50px;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-90px);
+    -webkit-transform: translateY(-90px);
+    -moz-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    -o-transform: translateY(-90px);
+}
+
+.get-started-btn:hover {
+    background-color: #b30000;
+}
+
+.hands {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.hands img {
+    width: 700px;
+    margin: 0 20px;
+}
+
+.hands .get-started-btn{
+    width: 250px;
+    color: #F2E8C6;
+    align-items: center;
+    margin-top: 80%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hands .get-started-btn:hover{
+    transition: all  0.5s  ;
+    font-size: 35px;
+
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+/* Carousel Container */
+.carousel {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%; /* Or any specific width you need */
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+
+  /* Image Slides */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%;
+  }
+
+  .slide {
+    width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .slides .slide img {
+    width: 100%;
+    height: 478px;
+    border-radius: 10px;
+
+  }
+
+  /* Dots */
+  .dots {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f5e7;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #b22;
+  }
+.what-we-do {
+    background-color: #7a0000;
+    color: #F2E8C6;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 4%;
+    margin-left: 11%;
+}
+
+.what-we-do h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #F2E8C6;
+}
+
+.what-we-do .wedo{
+    margin-bottom: 40px;
+}
+.what-we-do .wedo p {
+
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #f2e8c6db;
+    font-weight: 100;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service {
+    background-color: #F2E8C6;
+    color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    width: 90px; /* Lebar gambar */
+    height: 90px; /* Tinggi gambar */
+    object-fit: contain; /* Gambar akan dipaskan tanpa terdistorsi */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+}
+
+.service h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #800000;
+}
+
+.service p {
+    font-size: 1em;
+    color: #2c2c2c;
+}
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2E8C6;
+  }
+
+  h2 {
+    text-align: center;
+    color: #800000;
+  }
+
+  p {
+    color: #666;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* Explore Locations */
+  .explore-locations {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 7%;
+  }
+
+  .explore-locations h2 {
+    font-size: 3em; /* Memperbesar ukuran teks judul */
+    margin-bottom: 20px;
+    color: #2c2c2c;
+  }
+
+  .explore-locations p {
+    font-size: 1.2em; /* Memperbesar ukuran teks deskripsi */
+    color: #2c2c2cc7;
+  }
+
+  .map-container img {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: block;
+    padding-top: 20px;
+  }
+
+  .articles-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F2E8C6;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .articles {
+    display: flex;
+    gap: 2rem;
+    margin-left: 15%;
+    margin-top: 20px;
+  }
+
+  .article-card {
+    background-color: #800000;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+
+  }
+
+  .article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .article-content {
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .article-content p {
+    color: #F2E8C6;
+    font-size: 10px;
+  }
+
+  .article-content h3 {
+    font-size: 16px;
+    color: #FFF5E1;
+    margin: 10px 0;
+  }
+
+  .article-content a {
+    font-size: 14px;
+    color: #F2E8C6;
+    text-decoration: underline;
+    text-underline-position: auto;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+
+  }
+
+
+
+  /* Footer */
+
+
+  /* CARD WHAT WE DO CSS */
+
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 1rem;
+}
+
+/* Blood Card Styling */
+.blood-card {
+    background-color: #F2E8C6;
+    color: #2c2c2c;
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    height: 387px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.icon {
+    background-color: #F2E8C6;
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Title Styling */
+.blood-card h2 {
+    color: #2c2c2c;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.blood-card p {
+    color: #2c2c2cc7;
+    font-size: 0.5em;
+    line-height: 200%;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+
+/* Arrow Button Styling */
+.arrow-button {
+    background-color: #F2E8C6;
+    color: #800000;
+    width: 50px;
+    border: 3px #800000 solid;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-button span {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.arrow-button:hover span {
+    transform: rotate(360deg);
+}
+
+/* END OF CARD WHAT WE DO */

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F2E8C6;
+    overflow-x: hidden;
+}
+.artikeljudul {
+    text-align: center;
+    padding-top: 60px;
+    padding-right: 920px;
+    color: #800000;
+    font-size: 32px;
+    margin: auto;
+}
+
+.judul2 {
+    text-align: center;
+    color: #800000;
+    font-size: 20px;
+}
+
+.orgsakit img {
+    text-align: center;
+    padding-top: 25px;
+    width: 700px;
+    margin: 0 20px;
+    border-radius: 10%;
+}
+
+.adimin {
+    padding-top: 5px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14px;
+    color: #C39B73;
+}
+.adimin img {
+    padding-left: 20px;
+    padding-right: 5px;
+    width: 30x;
+    height: 20px;
+}
+
+.isi {
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    align-items: center;
+    color: #800000;
+    max-width: 1150px;
+    max-height: 1150px;
+
+}
+
+/* Footer */

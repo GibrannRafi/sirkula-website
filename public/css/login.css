@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #800000;
+    overflow-x: hidden;
+
+}
+
+.hr {
+    border: 2px solid #F2E8C6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.form-container {
+    background-color: #f9e3c3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #800000;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7a0000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    border: 2px solid #7a0000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button {
+    background-color: #7a0000;
+    border: none;
+    border-radius: 5px;
+    color: #F2E8C6;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+a {
+    color: #800000;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a span {
+    font-weight: bold;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.social-btn {
+    background-color: #800000;
+    border: 2px solid #7a0000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 48%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.social-btn:hover {
+    background-color: #b30000;
+}
+
+.sign-up-container {
+    display: none;
+}

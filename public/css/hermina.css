@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F2E8C6;
+    overflow-x: hidden;
+}
+
+
+
+/* isi */
+.judul2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.hermina img {
+    text-align: center;
+    padding-top: 10px;
+    width: 700px;
+    margin: 0 20px;
+    border-radius: 10%;
+}
+
+.alamat {
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    color: #797463;
+    opacity: 100%;
+}
+
+.place img {
+    width: 30x;
+    height: 20px;
+}
+
+.telpon {
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    color: #797463  ;
+    opacity: 100%;
+}
+
+.telpon img {
+    width: 30x;
+    height: 20px;
+}
+
+.atastable {
+    padding-top: 90px;
+    padding-left: 500px;
+}
+
+/* table */
+
+.tabel {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #A3463C;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  th {
+    background-color: #800000;
+    color: white;
+  }
+
+/* Footer */
