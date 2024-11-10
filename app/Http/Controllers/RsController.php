@@ -105,10 +105,20 @@ class RsController extends Controller
         return view('pages.cekstock.rumahsakit', compact('rs', 'query'));
     }
 
-    public function isi()
-    {
-        $rs = RsModel::all(); // Mengambil semua data rumah sakit dari model RsModel
+    // public function information()
+    // {
+    //     // $rs = RsModel::get(); // Mengambil semua data rumah sakit dari model RsModel
 
-        return view("pages.cekstock.hermina", compact('rs')); // Mengirim data $rs ke view
+    //     return view("pages.cekstock.hermina"); // Mengirim data $rs ke view
+    // }
+    public function information($id){
+        
+        $data = RsModel::find($id);
+        
+        if(!$data){            
+            return redirect()->route('rs.tampil')->with('error', 'Data not found');                        
+        }
+        return view("pages.cekstock.hermina", ['data' => $data]);
+        
     }
 }

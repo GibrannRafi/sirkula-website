@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
@@ -30,7 +31,11 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
-        $user->save();
+        if ($user) {
+            $user->assignRole('user');
+            $role = 'user';
+            $user->save();
+        }
         // dd  ($user);
         return redirect()->route('login.tampil');
     }
@@ -43,8 +48,11 @@ class UserController extends Controller
         $data = $request->only('email', 'password');
 
         if (Auth::attempt($data)) {
+            $user = Auth::User();
             // $request->session()->regenerate(); // coba komentar sementara
-            return redirect()->route('home');
+            if ($user->hasRole('user')) {
+                return redirect()->route('home');   
+            }
         } else {
             return redirect()->back()->with('gagal', "Email atau Password salah");
         }

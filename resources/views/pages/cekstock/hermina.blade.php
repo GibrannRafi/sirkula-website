@@ -12,13 +12,14 @@
 
     <!-- Panggil komponen navbar di sini -->
     <x-navbar />
-
+    @foreach ($data as $datas)
     <section class="judul2">
-        @foreach ($rs as $data)
-            <h1>Rs.Hermina Depok</h1>
+        
+            <h1>{{ $datas->nama_rs }}</h1>
             <div class="hermina">
-                <img src="{{ $data->gambar_rs }}" alt="Image of Rs Hermina">
+                <img src="{{ $datas->gambar_rs }}" alt="Image of Rs Hermina">
             </div>
+        
     </section>
 
     <section class="alamat">
@@ -89,9 +90,9 @@
                 <td>0</td>
                 <td>23</td>
             </tr>
-        </table>
-        @endforeach
+        </table>        
     </div>
+    @endforeach
 
     <x-footer></x-footer>
 </body>

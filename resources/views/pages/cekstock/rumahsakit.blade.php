@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="availability-button">
-                            <a href="{{ route('rs.list') }}">Available</a>
+                            <a href="{{ route('rs.list', ['id' => $data->id]) }}">Available</a>
                         </div>
 
                     </div>

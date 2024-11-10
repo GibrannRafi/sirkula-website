@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class RsModel extends Model
 {
-    protected $table = "rs";
-
+    protected $table = "rs";    
+    protected $primaryKey = 'id';
     protected $fillable = [
         "nama_rs",
         "alamat",
